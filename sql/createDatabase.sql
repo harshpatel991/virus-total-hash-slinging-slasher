@@ -1,18 +1,16 @@
-CREATE TABLE report (
-  reportID INT UNIQUE AUTO_INCREMENT,
-  scanDate DATETIME,
-  resource VARCHAR(100),
-  permalink VARCHAR(150)
+CREATE TABLE users (
+  userID INT UNIQUE AUTO_INCREMENT,
+  email VARCHAR(50),
+  password VARCHAR(50)
 );
 
-CREATE TABLE scan (
-  scanID INT UNIQUE AUTO_INCREMENT,
-  reportID INT,
-  scanner VARCHAR(50),
-  detected BOOL,
-  version VARCHAR(50),
-  result VARCHAR(50),
-  updateVer VARCHAR(50)
-
+CREATE TABLE query (
+  queryID INT UNIQUE AUTO_INCREMENT,
+  userID INT
 );
 
+CREATE TABLE hashes (
+  hashID INT UNIQUE AUTO_INCREMENT,
+  queryID INT,
+  hash varchar(100)
+);

@@ -1,7 +1,6 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Me
- * Date: 3/19/15
- * Time: 7:34 PM
- */
+Hash Slinging Slasher <br>
+
+<form action
+<textarea rows="4" cols="50" >
+Insert one hash per line...
+</textarea>
