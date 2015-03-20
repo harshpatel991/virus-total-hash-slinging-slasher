@@ -4,9 +4,10 @@ CREATE TABLE users (
   password VARCHAR(50)
 );
 
-CREATE TABLE query (
+CREATE TABLE queries (
   queryID INT UNIQUE AUTO_INCREMENT,
-  userID INT
+  userID INT,
+  querydate datetime default NOW()
 );
 
 CREATE TABLE hashes (
