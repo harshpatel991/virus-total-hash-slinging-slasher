@@ -5,7 +5,7 @@ class hashModel {
     public $queryID;
     public $hash;
 
-    public function __constructor($queryID='', $hash='', $hashID=0) {
+    public function __construct($queryID=0, $hash='', $hashID=0) {
         $this->queryID = $queryID;
         $this->hash = $hash;
         $this->hashID = $hashID;
