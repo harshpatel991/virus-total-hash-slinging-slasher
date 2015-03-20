@@ -1,6 +1,6 @@
-The hash sliging... the bash rining... the rash bringing
-
 <?php
 
+require_once(dirname(__FILE__).'/../scripts/views/dummyView.php');
 
- ?>
+
+?>
