@@ -6,7 +6,7 @@
  * Time: 7:34 PM
  */
 
-$searchID=$_GET['searchid'];
+$searchID=$_GET['queryID'];
 $hashDAO=new hashesDAO();
 
 $hashes=

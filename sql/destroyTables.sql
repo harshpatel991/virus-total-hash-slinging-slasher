@@ -1,0 +1,5 @@
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS queries;
+DROP TABLE IF EXISTS hashes;
+
+

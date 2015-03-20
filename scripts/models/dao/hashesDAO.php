@@ -27,7 +27,7 @@ class hashesDAO {
      * @param $id int The hashID
      * @return hashModel The hash object
      */
-    public function find($hashID) {
+    public function findWithHashID($hashID) {
         $connection = DbConnectionFactory::create();
         $query = 'SELECT * FROM hashes WHERE hashID=:hashID';
         $stmt = $connection->prepare($query);
@@ -37,5 +37,21 @@ class hashesDAO {
         $hash = $stmt->fetch();
         $connection = null;
         return $hash;
+    }
+
+    /**
+     * Finds all hashes with the matching query ID
+     * @param $queryID int
+     * @return array of hashModels
+     */
+    public function findWithQueryID($queryID) {
+        $connection = DbConnectionFactory::create();
+        $query = 'SELECT * FROM hashes WHERE queryID=:queryID';
+        $stmt = $connection->prepare($query);
+        $stmt->bindParam(':queryID', $queryID);
+        $stmt->execute();
+        $hashes = $stmt->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'hashModel');
+        $connection=null;
+        return $hashes;
     }
 }
