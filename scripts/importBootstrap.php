@@ -1,4 +1,4 @@
-<script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+<script src="js/jquery-2.1.3.js"></script>
 
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/bootstrap-theme.css">
