@@ -1,7 +1,7 @@
 <div class="row" id="nav-bar">
     <div class="col-xs-2 col-md-offset-2">
         <div id="logo">
-            <a href="home.php">Hash Slinger</a>
+            <a href="home.php">Hash <b>Slinger</b></a>
         </div>
     </div>
     <div class="col-xs-8 col-sm-8 col-lg-6">
