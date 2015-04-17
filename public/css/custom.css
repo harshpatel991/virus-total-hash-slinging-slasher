@@ -1,11 +1,13 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
 #logo {
     font-size: 1.6em;
     font-weight: 700;
     color: #ffffff;
 }
+
 #nav-bar {
     font-family: 'Open Sans', sans-serif;
     background-color: #333c4e;
@@ -17,13 +19,12 @@ body {
 
 #nav-bar a {
     color: #8c99b1;
-    padding: 0px 40px;
-    font-weight: 300;
+    font-weight: 400;
     margin-top: 15px;
 }
 
 #home-background {
-    background-color: #e9f0fa;
+    background-color: #38455B;
 }
 
 .submit-button {
@@ -33,3 +34,37 @@ body {
     margin: 0 auto;
     margin-top: 20px;
 }
+
+.hashes-box {
+    font-size: 1.5em;
+    background-color: #333C4E;
+    color: #ffffff;
+    border: none;
+}
+
+hr {
+    border-color: #8c99b1;
+}
+
+/*
+Columns vertical align taken from
+http://stackoverflow.com/questions/20547819/vertical-align-with-bootstrap-3
+*/
+.vertical-align {
+    display: flex;
+    flex-direction: row;
+}
+
+.vertical-align > [class^="col-"],
+.vertical-align > [class*=" col-"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vertical-align > [class^="col-"] > div,
+.vertical-align > [class*=" col-"] > div {
+    /* flex: 1; */
+    flex-grow: 1;
+}
+
