@@ -9,5 +9,6 @@
     <body id="background">
         <?php require_once(dirname(__FILE__).'/../scripts/views/navBarView.php'); ?>
         <?php require_once(dirname(__FILE__).'/../scripts/views/homeView.php'); ?>
+        <?php require_once(dirname(__FILE__).'/../scripts/views/footerView.php'); ?>
     </body>
 </html>

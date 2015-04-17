@@ -18,7 +18,7 @@ body {
 }
 
 #nav-bar a {
-    color: #8c99b1;
+    color: #D4DDEE;
     font-weight: 400;
     margin-top: 15px;
 }
@@ -44,6 +44,10 @@ body {
 
 .light-text {
     color: rgba(255, 255, 255, 0.57)
+}
+
+.very-light-text {
+    color: rgba(255, 255, 255, 0.15)
 }
 
 hr {

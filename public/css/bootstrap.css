@@ -5305,7 +5305,7 @@ a.list-group-item-danger.active:focus {
   line-height: 1.3;
 }
 .panel {
-  color: #fff;
+  color: #D4DDEE;
   margin-bottom: 20px;
   background-color: #2A313E;
   border: 0px solid transparent;
@@ -5336,7 +5336,7 @@ a.list-group-item-danger.active:focus {
 .panel-title > .small,
 .panel-title > small > a,
 .panel-title > .small > a {
-  color: #fff;
+  color: #D4DDEE;
 }
 .panel-footer {
   padding: 10px 15px;
