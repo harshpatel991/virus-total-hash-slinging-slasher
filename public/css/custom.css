@@ -23,7 +23,7 @@ body {
     margin-top: 15px;
 }
 
-#home-background {
+#background {
     background-color: #38455B;
 }
 
@@ -44,6 +44,10 @@ body {
 
 hr {
     border-color: #8c99b1;
+}
+
+#td-no-border {
+    border: none;
 }
 
 /*

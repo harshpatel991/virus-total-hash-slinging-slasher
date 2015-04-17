@@ -1,7 +1,14 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: alex
- * Date: 3/19/15
- * Time: 7:33 PM
- */
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Hash Slinger Report</title>
+        <?php require_once(dirname(__FILE__).'/../scripts/importBootstrap.php'); ?>
+    </head>
+
+    <body id="background">
+        <?php require_once(dirname(__FILE__).'/../scripts/views/navBarView.php'); ?>
+        <?php require_once(dirname(__FILE__).'/../scripts/views/reportView.php'); ?>
+    </body>
+
+</html>
