@@ -36,10 +36,14 @@ body {
 }
 
 .hashes-box {
-    font-size: 1.5em;
+    font-size: 1.1em;
     background-color: #333C4E;
     color: #ffffff;
     border: none;
+}
+
+.light-text {
+    color: rgba(255, 255, 255, 0.57)
 }
 
 hr {
