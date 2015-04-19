@@ -7,7 +7,7 @@ CREATE TABLE users (
 CREATE TABLE queries (
   queryID INT UNIQUE AUTO_INCREMENT,
   userID INT,
-  querydate datetime default NOW()
+  querydate timestamp default NOW()
 );
 
 CREATE TABLE hashes (

@@ -2,12 +2,13 @@
 class resultListItem {
 
     /**
-     * @param $isFirst Set to true if this is the first item in the list (sets it's accordion to open)
-     * @param $uniqueID A unique id to identify each result list item
-     * @param $title The title that appears in the list
-     * @param $content The content that appears below the title
-     * @param $percentGood The percentage of scanners that found the item to not be a virus
-     * @param $percentBad The percentage of scanners that found the item to be a virus
+     * @param $isFirst boolean to true if this is the first item in the list (sets it's accordion to open)
+     * @param $uniqueID int unique id to identify each result list item
+     * @param $title string title that appears in the list
+     * @param $content stdClass content that appears below the title
+     * @param $percentGood int percentage of scanners that found the item to not be a virus
+     * @param $percentBad int percentage of scanners that found the item to be a virus
+     * @return string
      */
     public static function newItem($isFirst, $uniqueID, $title, $vtResults, $percentGood, $percentBad) {
         $collapse = '';
@@ -54,8 +55,12 @@ class resultListItem {
         $table = '<table class="table">';
         $table .=  '<tr><th>Scanner</th><th>Detected</th><th>Version</th><th>Result</th></tr>';
 
-        foreach ($vtResults as $result) {
-            $table .= '<tr><td id="td-no-border">'.$result['scanner'].'</td><td id="td-no-border">'.$result['detected'].'</td><td id="td-no-border">'.$result['version'].'</td><td id="td-no-border">'.$result['result'].'</td></tr>';
+        foreach ($vtResults as $scanner=>$result) {
+            $detected="No";
+            if ($result->detected){
+                $detected="Yes";
+            }
+            $table .= '<tr><td id="td-no-border">'.$scanner.'</td><td id="td-no-border">'.$detected.'</td><td id="td-no-border">'.$result->version.'</td><td id="td-no-border">'.$result->result.'</td></tr>';
         }
 
         $table .= '</table>';

@@ -7,7 +7,7 @@ require_once(dirname(__FILE__).'/../../models/queryModel.php');
  * Inserts hashes into tables and redirects to the report page with the appropriate query parameter
  */
 $hashes = $_POST['hashes'];
-$hashes = explode("\n", $hashes);
+$hashes = explode("\r\n", $hashes);
 
 $queryDAO = new queryDAO();
 $hashDAO = new hashesDAO();
@@ -17,8 +17,11 @@ $userID = -1;
 $queryID = $queryDAO->insert($userID);
 
 foreach($hashes as $hashString) {
-    $hash = new hashModel($queryID, $hashString);
-    $hashDAO->insert($hash);
+    if (ctype_alnum($hashString) && (strlen($hashString)==40 || strlen($hashString)==32 || strlen($hashString)==64)) {
+        echo $hashString;
+        $hash = new hashModel($queryID, $hashString);
+        $hashDAO->insert($hash);
+    }
 }
 
 header("Location: ../../../public/report.php?queryID=".$queryID);
