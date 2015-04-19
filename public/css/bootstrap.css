@@ -4985,9 +4985,9 @@ a.thumbnail.active {
   color: #66512c;
 }
 .alert-danger {
-  color: #a94442;
-  background-color: #f2dede;
-  border-color: #ebccd1;
+  color: #fff;
+  background-color: #D9534F;
+  /*border-color: #D9534F;*/
 }
 .alert-danger hr {
   border-top-color: #e4b9c0;
@@ -5143,8 +5143,8 @@ a.thumbnail.active {
   display: block;
   padding: 10px 15px;
   margin-bottom: -1px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #2A313E;
+  border: 1px solid #4F4F4F;
 }
 .list-group-item:first-child {
   border-top-left-radius: 4px;
@@ -5318,7 +5318,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel-heading {
   padding: 10px 15px;
-  border-bottom: 1px solid transparent;
+  /*border-bottom: 1px solid transparent;*/
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -5329,7 +5329,8 @@ a.list-group-item-danger.active:focus {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 16px;
-  color: inherit;
+  color: #D4DDEE;
+  font-weight: 700;
 }
 .panel-title > a,
 .panel-title > small,

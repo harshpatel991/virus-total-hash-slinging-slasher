@@ -27,7 +27,7 @@ class queryDAO {
         $connection=DbConnectionFactory::create();
         $query = 'SELECT * FROM queries WHERE queryID=:queryID';
         $stmt = $connection->prepare($query);
-        $stmt->bindParam(':queryID', $queryID);
+        $stmt->bindParam(':queryID', $queryid);
         $stmt->execute();
         $stmt->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'queryModel');
         $retquer = $stmt->fetch();
@@ -45,5 +45,16 @@ class queryDAO {
         $querylist=$stmt->fetchAll();
         $connection=null;
         return $querylist;
+    }
+
+    public function find10RecentQueries() {
+        $connection=DbConnectionFactory::create();
+        $query = 'SELECT * FROM queries ORDER BY querydate DESC LIMIT 10';
+        $stmt = $connection->prepare($query);
+        $stmt->execute();
+        $stmt->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'queryModel');
+        $queries = $stmt->fetchAll();
+        $connection = null;
+        return $queries;
     }
 }

@@ -58,6 +58,10 @@ hr {
     border: none;
 }
 
+h3 {
+    color: #D4DDEE;
+}
+
 /*
 Columns vertical align taken from
 http://stackoverflow.com/questions/20547819/vertical-align-with-bootstrap-3

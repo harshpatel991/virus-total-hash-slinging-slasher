@@ -12,7 +12,6 @@ $hashes = explode("\r\n", $hashes);
 $queryDAO = new queryDAO();
 $hashDAO = new hashesDAO();
 
-// TODO: check if user is logged in here, if not send userID = -1
 $userID = -1;
 $queryID = $queryDAO->insert($userID);
 

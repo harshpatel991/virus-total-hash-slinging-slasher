@@ -54,4 +54,6 @@ class hashesDAO {
         $connection=null;
         return $hashes;
     }
+
+
 }
