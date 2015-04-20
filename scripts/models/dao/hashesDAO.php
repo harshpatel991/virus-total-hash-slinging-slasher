@@ -55,5 +55,14 @@ class hashesDAO {
         return $hashes;
     }
 
+    public function getTop5Hashes(){
+        $connection = DbConnectionFactory::create();
+        $query = "SELECT *, COUNT(hash) as hash_count FROM hashes GROUP BY hash ORDER BY hash_count DESC LIMIT 5";
+        $stmt = $connection->prepare($query);
+        $stmt->execute();
+        $hashes = $stmt->fetchAll();
+        $connection = null;
+        return $hashes;
+    }
 
 }

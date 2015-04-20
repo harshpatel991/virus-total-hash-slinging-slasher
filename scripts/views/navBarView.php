@@ -19,7 +19,7 @@
                 </div>
 
                 <div class="col-md-3 col-sm-4">
-                    <a href="recent.php"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Recent Hashes</a>
+                    <a href="recent.php"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Recent Queries</a>
                 </div>
             </div>
         </div>
