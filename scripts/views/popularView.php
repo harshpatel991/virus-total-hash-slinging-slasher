@@ -32,7 +32,7 @@ $hashes = $hashDAO->getTop5Hashes();
                                     <?php echo "Searched ".$hash["hash_count"]. " times";?>
                                 </li>
                         </ul>
-                        <button type="submit" class="btn btn-sml btn-primary pull-right"> <span class="glyphicon glyphicon-refresh"></span>Run analysis</button>
+                        <button type="submit" class="btn btn-sml btn-primary pull-right"> <span class="glyphicon glyphicon-refresh"></span> Run analysis</button>
                         </form>
                     </div>
                 </div>
