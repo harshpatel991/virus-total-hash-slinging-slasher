@@ -57,10 +57,13 @@ class resultListItem {
 
         foreach ($vtResults as $scanner=>$result) {
             $detected="No";
+            $rowColor = '';
             if ($result->detected){
                 $detected="Yes";
+                $rowColor = 'style = "background-color: #AD3F3F;"';
             }
-            $table .= '<tr><td id="td-no-border">'.$scanner.'</td><td id="td-no-border">'.$detected.'</td><td id="td-no-border">'.$result->version.'</td><td id="td-no-border">'.$result->result.'</td></tr>';
+            $table .= '<tr '.$rowColor.'>';
+            $table .= '<td id="td-no-border">'.$scanner.'</td><td id="td-no-border">'.$detected.'</td><td id="td-no-border">'.$result->version.'</td><td id="td-no-border">'.$result->result.'</td></tr>';
         }
 
         $table .= '</table>';
