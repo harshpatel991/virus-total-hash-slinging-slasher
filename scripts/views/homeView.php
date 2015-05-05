@@ -4,7 +4,7 @@
 
             <form action="../scripts/controllers/formControllers/hashFormController.php" method="post">
                 <div class="form-group">
-                    <textarea rows="18" cols="50" id="hashes" name="hashes" class="form-control hashes-box" placeholder="Insert one hash per line..." ></textarea>
+                    <textarea rows="18" cols="50" id="hashes" name="hashes" class="form-control hashes-box" placeholder="Insert one MD5/SHA1/SHA256 hash per line..." ></textarea>
 
                     <div class="row">
                         <div class="col-xs-6">
