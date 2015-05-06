@@ -2,6 +2,11 @@
     <div class="row">
         <div class="col-lg-4 col-lg-offset-4 col-md-offset-2 col-md-8">
 
+            <?php
+            if(isset($_GET['error']) && $_GET['error'] == '1') {
+                ?>
+                <div class="alert alert-danger" role = "alert" > One of your hashes was rejected. There is a limit to Virus Totals API. If you are rapidly attempting queries, please try again in one minute. Otherwise, please verify your hashes.</div>
+            <?php } ?>
             <form action="../scripts/controllers/formControllers/hashFormController.php" method="post">
                 <div class="form-group">
                     <textarea rows="18" cols="50" id="hashes" name="hashes" class="form-control hashes-box" placeholder="Insert one MD5/SHA1/SHA256 hash per line..." ></textarea>
